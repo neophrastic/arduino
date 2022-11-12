@@ -12,7 +12,7 @@ void setup(){
 
 void loop(){
   if (irrecv.decode(&results)){
-        Serial.println(results.value, HEX);
-        irrecv.resume();
+    Serial.println(results.value, HEX);
+    irrecv.resume();
   }
 }
